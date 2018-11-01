@@ -6,6 +6,7 @@ services:
       - "8888:8888"
     volumes:
       - .:/home/jovyan
+    command: start-notebook.sh --NotebookApp.token=""
   this_postgres:
     build: docker/postgres
     volumes:
